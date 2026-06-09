@@ -9,6 +9,7 @@
   const quickSearch = document.querySelector("#quick-search");
   const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
   const whatsLinks = Array.from(document.querySelectorAll(".js-whatsapp-link"));
+  const instagramLinks = Array.from(document.querySelectorAll(".js-instagram-link"));
 
   let activeFilter = "todos";
   let query = "";
@@ -33,6 +34,14 @@
       link.setAttribute("href", whatsappHref(message));
       if (!config.whatsappNumber) {
         link.setAttribute("title", "Configure o WhatsApp em assets/js/site-config.js");
+      }
+    });
+  }
+
+  function updateInstagramLinks() {
+    instagramLinks.forEach((link) => {
+      if (config.instagramUrl) {
+        link.setAttribute("href", config.instagramUrl);
       }
     });
   }
@@ -156,5 +165,6 @@
   }
 
   updateWhatsappLinks();
+  updateInstagramLinks();
   render();
 })();

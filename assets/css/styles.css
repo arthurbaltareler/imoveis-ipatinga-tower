@@ -576,6 +576,19 @@ input {
   color: var(--surface-strong);
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.contact-actions .button-secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -660,6 +673,10 @@ input {
   .contact-section .button,
   .intro-actions .button {
     width: 100%;
+  }
+
+  .contact-actions {
+    justify-content: stretch;
   }
 
   .site-footer {
