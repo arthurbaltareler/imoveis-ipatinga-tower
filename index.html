@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imóveis Ipatinga Tower - Lívia Eller</title>
+    <meta
+      name="description"
+      content="Salas e imóveis no Ipatinga Tower para locação e venda com atendimento da corretora Lívia Eller."
+    >
+    <meta property="og:title" content="Imóveis Ipatinga Tower - Lívia Eller">
+    <meta
+      property="og:description"
+      content="Catálogo de referência para consultar salas por código, locação e venda no Ipatinga Tower."
+    >
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/ipatinga-tower-logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img src="assets/img/ipatinga-tower-logo.png" alt="Ipatinga Tower">
+        <span>Imóveis Ipatinga Tower</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#tower">Ipatinga Tower</a>
+        <a href="#atendimento">Atendimento</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Locação e venda de salas comerciais</p>
+          <h1 id="intro-title">Imóveis Ipatinga Tower - Lívia Eller</h1>
+          <p>
+            Um catálogo direto para apresentar salas, lojas e conjuntos no Ipatinga Tower,
+            com consulta por código e informações centralizadas para clientes.
+          </p>
+          <div class="intro-actions">
+            <a class="button button-primary" href="#imoveis">Ver imóveis</a>
+            <a class="button button-secondary js-whatsapp-link" href="#contato">Falar com Lívia</a>
+          </div>
+        </div>
+
+        <aside class="reference-panel" aria-label="Consulta rápida">
+          <div class="tower-logo-card">
+            <img src="assets/img/ipatinga-tower-logo.png" alt="Ipatinga Tower">
+          </div>
+          <div>
+            <span class="panel-label">Consulta por código</span>
+            <strong>Salas organizadas para envio rápido</strong>
+          </div>
+          <form class="quick-search" id="quick-search">
+            <label for="hero-search">Código da sala</label>
+            <div class="search-row">
+              <input id="hero-search" name="codigo" type="search" placeholder="Ex.: TOWER-1204">
+              <button type="submit">Buscar</button>
+            </div>
+          </form>
+          <dl class="building-highlights">
+            <div>
+              <dt>28</dt>
+              <dd>andares</dd>
+            </div>
+            <div>
+              <dt>300</dt>
+              <dd>vagas rotativas</dd>
+            </div>
+            <div>
+              <dt>24h</dt>
+              <dd>monitoramento</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="catalog-section" id="imoveis" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Catálogo</p>
+          <h2 id="catalog-title">Imóveis disponíveis</h2>
+          <p>
+            A lista pode ser atualizada com fotos, código, metragem, andar, finalidade
+            e observações de cada sala.
+          </p>
+        </div>
+
+        <div class="filters" aria-label="Filtros de imóveis">
+          <label class="search-field" for="catalog-search">
+            <span>Buscar por código ou detalhe</span>
+            <input id="catalog-search" type="search" placeholder="Código, andar, tipo ou observação">
+          </label>
+
+          <div class="segmented-control" role="group" aria-label="Finalidade">
+            <button class="filter-button is-active" type="button" data-filter="todos">Todos</button>
+            <button class="filter-button" type="button" data-filter="Locação">Locação</button>
+            <button class="filter-button" type="button" data-filter="Venda">Venda</button>
+          </div>
+        </div>
+
+        <div class="catalog-summary" id="catalog-summary" aria-live="polite"></div>
+        <div class="property-grid" id="property-grid"></div>
+      </section>
+
+      <section class="tower-section" id="tower" aria-labelledby="tower-title">
+        <div class="tower-copy">
+          <p class="eyebrow">O empreendimento</p>
+          <h2 id="tower-title">Ipatinga Tower</h2>
+          <p>
+            Corporate Building em localização estratégica no Vale do Aço, situado entre
+            eixos viários da BR-381 e ao lado do Shopping Vale do Aço.
+          </p>
+        </div>
+
+        <div class="fact-grid" aria-label="Diferenciais do Ipatinga Tower">
+          <article>
+            <span>01</span>
+            <h3>Estrutura corporativa</h3>
+            <p>Salas comerciais, lojas, consultórios, clínicas e conjuntos corporativos.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Open mall</h3>
+            <p>29 lojas e fluxo de serviços no próprio empreendimento.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mobilidade</h3>
+            <p>3 andares de estacionamento rotativo, totalizando 300 vagas.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Segurança</h3>
+            <p>Vigilância e monitoramento 24 horas para uso com mais tranquilidade.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Heliponto</h3>
+            <p>Primeira torre comercial com heliponto no leste mineiro, segundo a apresentação.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>Elevadores</h3>
+            <p>7 elevadores, incluindo um com tamanho especial para suporte à área da saúde.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-section" id="atendimento" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Atendimento</p>
+          <h2 id="process-title">Como a Lívia conduz a locação</h2>
+          <p>
+            O site complementa o atendimento, organizando referências para o cliente
+            antes e depois da conversa pelo WhatsApp ou presencialmente.
+          </p>
+        </div>
+
+        <div class="process-list">
+          <article>
+            <span>1</span>
+            <h3>Visita e apresentação</h3>
+            <p>Agendamento para conhecer o empreendimento e as unidades disponíveis.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Orientação dos trâmites</h3>
+            <p>Explicação dos próximos passos para concluir a locação ou a venda.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Análise documental</h3>
+            <p>Solicitação de documentos para análise de crédito, locatários e fiadores.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contato" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2 id="contact-title">Fale sobre uma sala no Ipatinga Tower</h2>
+          <p>
+            Informe o código da sala ou descreva o perfil desejado para receber as
+            opções de locação e venda disponíveis.
+          </p>
+        </div>
+        <a class="button button-primary js-whatsapp-link" href="#contato">Enviar mensagem</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Imóveis Ipatinga Tower - Lívia Eller</span>
+      <span>Avenida Pedro Linhares Gomes, 4300 - Ipatinga, MG</span>
+    </footer>
+
+    <script src="assets/js/site-config.js"></script>
+    <script src="assets/js/imoveis.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
