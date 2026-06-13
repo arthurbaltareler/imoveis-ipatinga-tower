@@ -8,7 +8,7 @@ Os imóveis ficam em `assets/js/imoveis.js`. Para publicar uma sala, adicione um
 
 ```js
 {
-  codigo: "TOWER-1204",
+  codigo: "Loja-03-C",
   finalidade: "Locação",
   titulo: "Sala comercial com vista para a BR-381",
   area: "40 m²",

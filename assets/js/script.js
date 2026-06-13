@@ -55,7 +55,8 @@
       property.andar,
       property.status,
       property.valor,
-      property.descricao
+      property.descricao,
+      Array.isArray(property.codigos) ? property.codigos.join(" ") : ""
     ].join(" "));
     return haystack.includes(normalize(query));
   }
@@ -77,7 +78,7 @@
     const codigos = Array.isArray(property.codigos) && property.codigos.length
       ? property.codigos.join(", ")
       : "";
-    const message = `Olá, Lívia. Tenho interesse no perfil ${property.codigo} do Ipatinga Tower.`;
+    const message = `Olá, Lívia. Tenho interesse no código ${property.codigo} do Ipatinga Tower.`;
 
     return `
       <article class="property-card">
@@ -91,7 +92,7 @@
           </div>
           <h3>${property.titulo || "Sala no Ipatinga Tower"}</h3>
           <p>${property.descricao || "Informações em atualização."}</p>
-          ${codigos ? `<p class="profile-codes"><strong>Códigos-base:</strong> ${codigos}</p>` : ""}
+          ${codigos ? `<p class="profile-codes"><strong>Códigos de referência:</strong> ${codigos}</p>` : ""}
           ${photoStrip ? `<div class="photo-strip">${photoStrip}</div>` : ""}
           <dl class="property-details">
             <div>
