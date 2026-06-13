@@ -34,6 +34,8 @@ whatsappNumber: "5531999999999"
 
 Crie a pasta `assets/img/salas` e coloque as fotos das salas nela. Depois, referencie os caminhos no campo `fotos` de cada imóvel.
 
+Para fotos usadas apenas como referência de padrão, use `assets/img/referencias`. A ideia é cadastrar perfis como "loja duplex com mezanino", "loja padrão com vitrine" ou "módulos compactos", sem precisar fotografar cada unidade idêntica separadamente.
+
 ## Publicação
 
 Como o projeto é estático, pode ser publicado no GitHub Pages sem etapa de build. Basta usar a branch `main` e apontar o Pages para a raiz do repositório.

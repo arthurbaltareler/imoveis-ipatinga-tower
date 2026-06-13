@@ -26,6 +26,7 @@
 
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#imoveis">Imóveis</a>
+        <a href="#galeria">Fotos</a>
         <a href="#tower">Ipatinga Tower</a>
         <a href="#atendimento">Atendimento</a>
       </nav>
@@ -37,8 +38,8 @@
           <p class="eyebrow">Locação e venda de salas comerciais</p>
           <h1 id="intro-title">Imóveis Ipatinga Tower - Lívia Eller</h1>
           <p>
-            Um catálogo direto para apresentar salas, lojas e conjuntos no Ipatinga Tower,
-            com consulta por código e informações centralizadas para clientes.
+            Um catálogo direto para apresentar perfis de lojas e salas no Ipatinga Tower,
+            com referências visuais por padrão, consulta por código e atendimento centralizado.
           </p>
           <div class="intro-actions">
             <a class="button button-primary" href="#imoveis">Ver imóveis</a>
@@ -81,17 +82,21 @@
       <section class="catalog-section" id="imoveis" aria-labelledby="catalog-title">
         <div class="section-heading">
           <p class="eyebrow">Catálogo</p>
-          <h2 id="catalog-title">Imóveis disponíveis</h2>
+          <h2 id="catalog-title">Perfis de referência</h2>
           <p>
-            A lista pode ser atualizada com fotos, código, metragem, andar, finalidade
-            e observações de cada sala.
+            Fotos agrupadas por padrão de loja para evitar repetição quando várias unidades
+            tiverem layout, metragem e acabamento semelhantes.
           </p>
         </div>
+        <p class="section-note">
+          As imagens funcionam como referência visual. A disponibilidade, a metragem exata e
+          os códigos das unidades são confirmados pela Lívia no atendimento.
+        </p>
 
         <div class="filters" aria-label="Filtros de imóveis">
           <label class="search-field" for="catalog-search">
             <span>Buscar por código ou detalhe</span>
-            <input id="catalog-search" type="search" placeholder="Código, andar, tipo ou observação">
+            <input id="catalog-search" type="search" placeholder="Código, loja, metragem ou perfil">
           </label>
 
           <div class="segmented-control" role="group" aria-label="Finalidade">
@@ -103,6 +108,44 @@
 
         <div class="catalog-summary" id="catalog-summary" aria-live="polite"></div>
         <div class="property-grid" id="property-grid"></div>
+      </section>
+
+      <section class="gallery-section" id="galeria" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Fotos de apoio</p>
+          <h2 id="gallery-title">Entradas, fachada e circulação</h2>
+          <p>
+            Imagens para contextualizar o empreendimento antes de entrar nas unidades:
+            acesso, fachada, corredores e sequência de lojas.
+          </p>
+        </div>
+
+        <div class="reference-gallery">
+          <figure>
+            <img src="assets/img/referencias/entrada-01.jpg" alt="Fachada do Ipatinga Tower com torre e estacionamento" loading="lazy">
+            <figcaption>Fachada e torre</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/referencias/entrada-03.jpg" alt="Entrada principal do Ipatinga Tower vista da rua" loading="lazy">
+            <figcaption>Acesso pela avenida</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/referencias/entrada-04.jpg" alt="Base comercial do Ipatinga Tower com lojas" loading="lazy">
+            <figcaption>Base comercial</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/referencias/corredor-02.jpg" alt="Corredor do open mall com lojas para locação" loading="lazy">
+            <figcaption>Corredor de lojas</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/referencias/corredor-01.jpg" alt="Circulação interna do open mall" loading="lazy">
+            <figcaption>Circulação interna</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/referencias/entrada-02.jpg" alt="Área de estacionamento e fachada lateral do empreendimento" loading="lazy">
+            <figcaption>Estacionamento e acesso</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="tower-section" id="tower" aria-labelledby="tower-title">

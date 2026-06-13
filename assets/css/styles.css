@@ -314,6 +314,7 @@ input {
 }
 
 .catalog-section,
+.gallery-section,
 .tower-section,
 .process-section,
 .contact-section {
@@ -374,9 +375,19 @@ input {
   font-weight: 700;
 }
 
+.section-note {
+  margin: -6px 0 22px;
+  padding: 14px 16px;
+  background: var(--teal-soft);
+  color: #164f4c;
+  border: 1px solid rgba(29, 116, 111, 0.16);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
 .property-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -399,7 +410,7 @@ input {
 .property-media {
   display: grid;
   place-items: center;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 4;
   background:
     linear-gradient(135deg, rgba(29, 116, 111, 0.16), transparent 52%),
     #e9edf2;
@@ -454,6 +465,30 @@ input {
   color: var(--muted);
 }
 
+.profile-codes {
+  padding: 10px 12px;
+  background: var(--teal-soft);
+  border-radius: 8px;
+}
+
+.profile-codes strong {
+  color: var(--teal);
+}
+
+.photo-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.photo-strip img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
 .property-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -482,6 +517,32 @@ input {
 .property-card .button {
   width: 100%;
   margin-top: auto;
+}
+
+.reference-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.reference-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.reference-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.reference-gallery figcaption {
+  padding: 12px 14px;
+  color: var(--surface-strong);
+  font-weight: 800;
 }
 
 .empty-state {
@@ -626,6 +687,7 @@ input {
   }
 
   .property-grid,
+  .reference-gallery,
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -660,9 +722,14 @@ input {
   .empty-state,
   .fact-grid,
   .property-grid,
+  .reference-gallery,
   .process-list,
   .building-highlights {
     grid-template-columns: 1fr;
+  }
+
+  .photo-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .segmented-control {

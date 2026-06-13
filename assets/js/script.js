@@ -69,13 +69,20 @@
 
   function propertyCard(property) {
     const tagClass = property.finalidade === "Venda" ? "tag sale" : "tag";
-    const photo = Array.isArray(property.fotos) && property.fotos.length ? property.fotos[0] : "";
-    const message = `Olá, Lívia. Tenho interesse no imóvel ${property.codigo} do Ipatinga Tower.`;
+    const photos = Array.isArray(property.fotos) ? property.fotos : [];
+    const photo = photos.length ? photos[0] : "";
+    const photoStrip = photos.slice(1, 5).map((item, index) => (
+      `<img src="${item}" alt="${property.titulo} - foto ${index + 2}" loading="lazy">`
+    )).join("");
+    const codigos = Array.isArray(property.codigos) && property.codigos.length
+      ? property.codigos.join(", ")
+      : "";
+    const message = `Olá, Lívia. Tenho interesse no perfil ${property.codigo} do Ipatinga Tower.`;
 
     return `
       <article class="property-card">
         <div class="property-media">
-          ${photo ? `<img src="${photo}" alt="${property.titulo}">` : "<span>Fotos em breve</span>"}
+          ${photo ? `<img src="${photo}" alt="${property.titulo}" loading="lazy">` : "<span>Fotos em breve</span>"}
         </div>
         <div class="property-body">
           <div class="property-topline">
@@ -84,6 +91,8 @@
           </div>
           <h3>${property.titulo || "Sala no Ipatinga Tower"}</h3>
           <p>${property.descricao || "Informações em atualização."}</p>
+          ${codigos ? `<p class="profile-codes"><strong>Códigos-base:</strong> ${codigos}</p>` : ""}
+          ${photoStrip ? `<div class="photo-strip">${photoStrip}</div>` : ""}
           <dl class="property-details">
             <div>
               <dt>Área</dt>
