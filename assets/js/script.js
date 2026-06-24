@@ -78,7 +78,11 @@
     const codigos = Array.isArray(property.codigos) && property.codigos.length
       ? property.codigos.join(", ")
       : "";
-    const message = `Olá, Lívia. Tenho interesse no código ${property.codigo} do Ipatinga Tower.`;
+    const isReference = property.codigoConfirmado === false;
+    const message = isReference
+      ? `Olá, Lívia. Tenho interesse na referência ${property.codigo} do Ipatinga Tower.`
+      : `Olá, Lívia. Tenho interesse no código ${property.codigo} do Ipatinga Tower.`;
+    const actionLabel = isReference ? "Consultar perfil" : "Consultar código";
 
     return `
       <article class="property-card">
@@ -112,7 +116,7 @@
               <dd>${property.valor || "Consulte"}</dd>
             </div>
           </dl>
-          <a class="button button-secondary" href="${whatsappHref(message)}">Consultar código</a>
+          <a class="button button-secondary" href="${whatsappHref(message)}">${actionLabel}</a>
         </div>
       </article>
     `;

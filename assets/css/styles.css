@@ -525,8 +525,10 @@ input:focus-visible {
 
 .property-media {
   display: grid;
+  flex: 0 0 auto;
   place-items: center;
   aspect-ratio: 16 / 10;
+  overflow: hidden;
   background:
     linear-gradient(135deg, rgba(29, 116, 111, 0.16), transparent 52%),
     #e9edf2;
@@ -542,11 +544,14 @@ input:focus-visible {
 }
 
 .property-body {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 14px;
   padding: 22px;
+  background: var(--surface);
 }
 
 .property-topline {
@@ -822,8 +827,32 @@ input:focus-visible {
     width: 100%;
   }
 
+  body {
+    line-height: 1.45;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    gap: 8px;
+    min-height: 0;
+    padding: 8px 12px 9px;
+  }
+
+  .site-header::after {
+    right: 12px;
+    left: 12px;
+  }
+
   .intro-section {
-    padding: 42px 16px;
+    gap: 18px;
+    padding: 30px 16px 36px;
+    background:
+      linear-gradient(180deg, rgba(8, 14, 27, 0.88), rgba(8, 14, 27, 0.62)),
+      url("../img/referencias/entrada-01.jpg") center / cover;
   }
 
   .intro-copy,
@@ -833,52 +862,112 @@ input:focus-visible {
   }
 
   .intro-copy > p:not(.eyebrow) {
-    max-width: 31ch;
+    max-width: 32ch;
+    margin-top: 12px;
+    font-size: 0.98rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    max-width: 9ch;
+    font-size: 2.38rem;
+    line-height: 1.04;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .hero-meta {
+    gap: 6px;
+    margin-top: 18px;
+  }
+
+  .hero-meta span {
+    min-height: 30px;
+    padding: 6px 9px;
+    font-size: 0.78rem;
   }
 
   .intro-actions {
     width: 100%;
     max-width: 360px;
+    gap: 8px;
+    margin-top: 22px;
   }
 
   .reference-panel {
-    padding: 18px;
-  }
-
-  .tower-logo-card {
-    min-height: 96px;
+    gap: 16px;
     padding: 14px;
   }
 
+  .reference-panel .tower-logo-card,
+  .reference-panel .building-highlights {
+    display: none;
+  }
+
+  .tower-logo-card {
+    min-height: 74px;
+    padding: 10px;
+  }
+
   .tower-logo-card img {
-    max-width: 260px;
+    max-width: 210px;
+  }
+
+  .panel-label {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+  }
+
+  .reference-panel strong {
+    max-width: 18ch;
+    font-size: 1.55rem;
+    line-height: 1.06;
   }
 
   .brand {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .brand img {
+    width: 150px;
   }
 
   .brand span {
-    padding-left: 0;
-    max-width: none;
-    border-left: 0;
+    display: none;
   }
 
   .main-nav {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    overflow: visible;
-    justify-content: stretch;
+    display: flex;
+    gap: 3px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
     width: 100%;
-    padding: 5px;
-    border-radius: 18px;
+    padding: 4px;
+    border-radius: 14px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .main-nav a {
-    justify-content: center;
-    padding: 9px 10px;
+    flex: 0 0 auto;
+    min-height: 34px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+    line-height: 1;
     text-align: center;
   }
 
@@ -886,8 +975,11 @@ input:focus-visible {
   .empty-state,
   .fact-grid,
   .property-grid,
-  .reference-gallery,
-  .building-highlights {
+  .reference-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-panel .search-row {
     grid-template-columns: 1fr;
   }
 
@@ -895,9 +987,128 @@ input:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .segmented-control {
+  .catalog-section,
+  .gallery-section,
+  .tower-section {
+    width: calc(100% - 28px);
+    max-width: 1180px;
+    padding: 50px 0;
+  }
+
+  .contact-section {
+    width: calc(100% - 28px);
+    max-width: 1180px;
+    padding: 24px 18px;
+  }
+
+  .section-heading {
     width: 100%;
+    max-width: 100%;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .section-heading .eyebrow {
+    margin-bottom: 0;
+  }
+
+  .section-heading p,
+  .tower-copy p,
+  .contact-section p {
+    margin-top: 10px;
+    font-size: 0.96rem;
+  }
+
+  .section-note {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: -2px 0 20px;
+    padding: 12px 13px;
+    font-size: 0.94rem;
+    line-height: 1.45;
+    font-weight: 750;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .filters {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .search-field,
+  .segmented-control {
+    min-width: 0;
+  }
+
+  input,
+  .search-row button,
+  .filter-button,
+  .button {
+    min-height: 42px;
+  }
+
+  .segmented-control {
+    display: grid;
+    width: 100%;
+    max-width: 100%;
     grid-template-columns: 1fr;
+  }
+
+  .filter-button {
+    min-width: 0;
+    padding: 8px 8px;
+    font-size: 0.86rem;
+    white-space: nowrap;
+  }
+
+  .property-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 12px;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .property-grid,
+  .property-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .property-media,
+  .photo-strip,
+  .property-details {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .property-topline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .property-card p,
+  .profile-codes,
+  .property-details dd {
+    font-size: 0.94rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .reference-gallery figcaption {
+    padding: 10px 12px;
+    font-size: 0.92rem;
   }
 
   .contact-section .button,
