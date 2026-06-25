@@ -3,11 +3,11 @@ window.IMOVEIS_TOWER = [
     codigo: "Loja-08",
     finalidade: "Locação",
     titulo: "Loja pronta duplex com vitrine",
-    area: "aprox. 60 m² disponíveis",
+    area: "aprox. 60 m²",
     andar: "2 pavimentos - open mall",
-    status: "Locação individual",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Loja pronta com 2 pavimentos: primeiro pavimento com 39 m² e segundo pavimento de aproximadamente 30 m². A metragem final é confirmada no atendimento. As fotos mostram a Loja-08; consulte também a Loja-09 e outras unidades disponíveis do mesmo padrão.",
+    descricao: "Loja pronta com 2 pavimentos: primeiro pavimento com 30 m² e segundo pavimento de aproximadamente 30 m². As fotos mostram a Loja-08; consulte também a Loja-09 e outras unidades disponíveis do mesmo padrão.",
     codigos: ["Loja-08", "Loja-09"],
     fotos: [
       "assets/img/referencias/loja-08-04.jpg",
@@ -20,11 +20,11 @@ window.IMOVEIS_TOWER = [
     codigo: "Lojas-08-09",
     finalidade: "Locação",
     titulo: "Lojas 08/09 prontas com 2 pavimentos",
-    area: "aprox. 60 m² por unidade",
+    area: "aprox. 120 m² totais",
     andar: "2 pavimentos - open mall",
-    status: "Referência visual",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Perfil das Lojas 08 e 09, prontas e com 2 pavimentos. Cada unidade tem 39 m² no primeiro pavimento e segundo pavimento de aproximadamente 30 m², total informado como quase 60 m² de área disponível.",
+    descricao: "Conjunto das Lojas 08 e 09, prontas e com 2 pavimentos. São aproximadamente 60 m² por pavimento, totalizando cerca de 120 m² de área disponível para operação.",
     codigos: ["Loja-08", "Loja-09"],
     fotos: [
       "assets/img/referencias/lojas-08-09-fachada-01.jpg"
@@ -37,9 +37,9 @@ window.IMOVEIS_TOWER = [
     titulo: "Loja de 25 m² ao lado da Sicredi",
     area: "25 m²",
     andar: "Open mall",
-    status: "Sem acabamento",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Loja compacta ao lado da Sicredi, sem acabamento e pronta para receber o projeto da operação. O código exato da unidade é confirmado no atendimento.",
+    descricao: "Loja compacta ao lado da Sicredi, sem acabamento e pronta para receber o projeto da operação.",
     codigos: [],
     fotos: [
       "assets/img/referencias/loja-25-sicredi-01.jpg"
@@ -52,9 +52,9 @@ window.IMOVEIS_TOWER = [
     titulo: "Loja de 40 m² com estrutura para mezanino",
     area: "40 m²",
     andar: "Open mall",
-    status: "Sem acabamento",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Loja sem acabamento, ao lado dos elevadores da recepção, com estrutura para implantação de mezanino. O código exato da unidade é confirmado no atendimento.",
+    descricao: "Loja sem acabamento, ao lado dos elevadores da recepção, com estrutura para implantação de mezanino.",
     codigos: [],
     fotos: [
       "assets/img/referencias/loja-40-mezanino-01.jpg"
@@ -67,30 +67,30 @@ window.IMOVEIS_TOWER = [
     titulo: "Sala de esquina com vista em duas faces",
     area: "40 m²",
     andar: "A confirmar",
-    status: "Disponibilidade a confirmar",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Sala de esquina com janelas em duas faces, iluminação natural e piso em granito. O código exato da unidade é confirmado no atendimento.",
+    descricao: "Sala de esquina com janelas em duas faces, iluminação natural e piso em granito.",
     codigos: [],
     fotos: [
-      "assets/img/referencias/sala-40-6andar-01.jpg",
-      "assets/img/referencias/sala-40-6andar-02.jpg"
+      "assets/img/referencias/sala-40-esquina-01.jpg",
+      "assets/img/referencias/sala-40-esquina-02.jpg"
     ]
   },
   {
-    codigo: "Ref-Sala-40M2-8Andar",
+    codigo: "Ref-Sala-40M2",
     codigoConfirmado: false,
     finalidade: "Locação",
-    titulo: "Sala de 40 m² no 8º andar",
+    titulo: "Sala de 40 m² com piso em granito",
     area: "40 m²",
-    andar: "8º andar",
-    status: "Disponibilidade a confirmar",
+    andar: "A confirmar",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Ambiente aberto com piso em granito, janelas de canto e boa iluminação natural. O código exato da unidade é confirmado no atendimento.",
+    descricao: "Ambiente aberto com piso em granito, janelas de canto e boa iluminação natural.",
     codigos: [],
     fotos: [
-      "assets/img/referencias/sala-40-8andar-03.jpg",
-      "assets/img/referencias/sala-40-8andar-02.jpg",
-      "assets/img/referencias/sala-40-8andar-01.jpg"
+      "assets/img/referencias/sala-40-padrao-03.jpg",
+      "assets/img/referencias/sala-40-padrao-02.jpg",
+      "assets/img/referencias/sala-40-padrao-01.jpg"
     ]
   },
   {
@@ -100,9 +100,9 @@ window.IMOVEIS_TOWER = [
     titulo: "Sala ampla de 67 m² com vista panorâmica",
     area: "67 m²",
     andar: "A confirmar",
-    status: "Disponibilidade a confirmar",
+    status: "Disponível",
     valor: "Consulte",
-    descricao: "Sala ampla com extensa linha de janelas, iluminação natural, piso em granito e flexibilidade para diferentes layouts. O código exato da unidade é confirmado no atendimento.",
+    descricao: "Sala ampla com extensa linha de janelas, iluminação natural, piso em granito e flexibilidade para diferentes layouts.",
     codigos: [],
     fotos: [
       "assets/img/referencias/sala-67-01.jpg",
@@ -117,7 +117,7 @@ window.IMOVEIS_TOWER = [
     titulo: "Loja pronta duplex com mezanino",
     area: "2 pavimentos - metragem a confirmar",
     andar: "2 pavimentos - open mall",
-    status: "Referência visual",
+    status: "Disponível",
     valor: "Consulte",
     descricao: "Perfil de loja pronta com vitrine, pé-direito e segundo pavimento/mezanino. As fotos da Loja-02-C servem como referência de padrão para unidades semelhantes.",
     codigos: ["Loja-02-C"],
@@ -136,7 +136,7 @@ window.IMOVEIS_TOWER = [
     titulo: "Loja pronta de esquina com 2 pavimentos",
     area: "2 pavimentos - metragem a confirmar",
     andar: "2 pavimentos - open mall",
-    status: "Referência visual",
+    status: "Disponível",
     valor: "Consulte",
     descricao: "Loja pronta com 2 pavimentos, maior exposição, fachada envidraçada e boa leitura externa. Fotos da Loja-15 como referência de posicionamento e visibilidade.",
     codigos: ["Loja-15"],
@@ -152,7 +152,7 @@ window.IMOVEIS_TOWER = [
     titulo: "Loja pronta compacta com 2 pavimentos",
     area: "2 pavimentos - metragem a confirmar",
     andar: "2 pavimentos - open mall",
-    status: "Referência visual",
+    status: "Disponível",
     valor: "Consulte",
     descricao: "Perfil de loja pronta com 2 pavimentos, porta e vitrine frontal em sequência de mall. Fotos da Loja-18 como referência principal; Loja-20 aparece como apoio visual.",
     codigos: ["Loja-18"],
