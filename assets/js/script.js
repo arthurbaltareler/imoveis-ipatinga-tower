@@ -104,7 +104,7 @@
               <dd>${property.area || "Consulte"}</dd>
             </div>
             <div>
-              <dt>Andar</dt>
+              <dt>Pavimento</dt>
               <dd>${property.andar || "Consulte"}</dd>
             </div>
             <div>

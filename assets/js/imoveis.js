@@ -2,12 +2,12 @@ window.IMOVEIS_TOWER = [
   {
     codigo: "Loja-08",
     finalidade: "Locação",
-    titulo: "Loja individual com 30 m²",
-    area: "30 m²",
-    andar: "Open mall",
+    titulo: "Loja pronta duplex com vitrine",
+    area: "aprox. 60 m² disponíveis",
+    andar: "2 pavimentos - open mall",
     status: "Locação individual",
     valor: "Consulte",
-    descricao: "Unidade de 30 m² com vitrine frontal e ambiente interno aberto. As fotos mostram a Loja-08; consulte também a Loja-09 e outras unidades disponíveis do mesmo padrão.",
+    descricao: "Loja pronta com 2 pavimentos: primeiro pavimento com 39 m² e segundo pavimento de aproximadamente 30 m². A metragem final é confirmada no atendimento. As fotos mostram a Loja-08; consulte também a Loja-09 e outras unidades disponíveis do mesmo padrão.",
     codigos: ["Loja-08", "Loja-09"],
     fotos: [
       "assets/img/referencias/loja-08-04.jpg",
@@ -19,12 +19,12 @@ window.IMOVEIS_TOWER = [
   {
     codigo: "Lojas-08-09",
     finalidade: "Locação",
-    titulo: "Duas lojas integradas com 60 m²",
-    area: "60 m²",
-    andar: "Open mall",
-    status: "Locação conjunta",
+    titulo: "Lojas 08/09 prontas com 2 pavimentos",
+    area: "aprox. 60 m² por unidade",
+    andar: "2 pavimentos - open mall",
+    status: "Referência visual",
     valor: "Consulte",
-    descricao: "Conjunto formado pelas Lojas 08 e 09, com dois módulos contíguos de 30 m² e fachada dupla. Opção para locação conjunta, totalizando 60 m².",
+    descricao: "Perfil das Lojas 08 e 09, prontas e com 2 pavimentos. Cada unidade tem 39 m² no primeiro pavimento e segundo pavimento de aproximadamente 30 m², total informado como quase 60 m² de área disponível.",
     codigos: ["Loja-08", "Loja-09"],
     fotos: [
       "assets/img/referencias/lojas-08-09-fachada-01.jpg"
@@ -61,12 +61,12 @@ window.IMOVEIS_TOWER = [
     ]
   },
   {
-    codigo: "Ref-Sala-40M2-6Andar",
+    codigo: "Ref-Sala-40M2-Esquina",
     codigoConfirmado: false,
     finalidade: "Locação",
     titulo: "Sala de esquina com vista em duas faces",
     area: "40 m²",
-    andar: "6º andar",
+    andar: "A confirmar",
     status: "Disponibilidade a confirmar",
     valor: "Consulte",
     descricao: "Sala de esquina com janelas em duas faces, iluminação natural e piso em granito. O código exato da unidade é confirmado no atendimento.",
@@ -112,15 +112,15 @@ window.IMOVEIS_TOWER = [
     ]
   },
   {
-    codigo: "Loja-03-C",
+    codigo: "Loja-02-C",
     finalidade: "Locação",
-    titulo: "Lojas duplex com mezanino",
-    area: "30 a 40 m² (referência)",
-    andar: "Open mall",
+    titulo: "Loja pronta duplex com mezanino",
+    area: "2 pavimentos - metragem a confirmar",
+    andar: "2 pavimentos - open mall",
     status: "Referência visual",
     valor: "Consulte",
-    descricao: "Perfil para lojas com vitrine, pé-direito e mezanino. As fotos da Loja-03-C servem como referência de padrão para unidades semelhantes.",
-    codigos: ["Loja-03-C"],
+    descricao: "Perfil de loja pronta com vitrine, pé-direito e segundo pavimento/mezanino. As fotos da Loja-02-C servem como referência de padrão para unidades semelhantes.",
+    codigos: ["Loja-02-C"],
     fotos: [
       "assets/img/referencias/loja-03c-02.jpg",
       "assets/img/referencias/loja-03c-01.jpg",
@@ -133,12 +133,12 @@ window.IMOVEIS_TOWER = [
   {
     codigo: "Loja-15",
     finalidade: "Locação",
-    titulo: "Loja de esquina com fachada ampla",
-    area: "Metragem a confirmar",
-    andar: "Open mall",
+    titulo: "Loja pronta de esquina com 2 pavimentos",
+    area: "2 pavimentos - metragem a confirmar",
+    andar: "2 pavimentos - open mall",
     status: "Referência visual",
     valor: "Consulte",
-    descricao: "Perfil de maior exposição, com fachada envidraçada e boa leitura externa. Fotos da Loja-15 como referência de posicionamento e visibilidade.",
+    descricao: "Loja pronta com 2 pavimentos, maior exposição, fachada envidraçada e boa leitura externa. Fotos da Loja-15 como referência de posicionamento e visibilidade.",
     codigos: ["Loja-15"],
     fotos: [
       "assets/img/referencias/loja-15-01.jpg",
@@ -149,13 +149,13 @@ window.IMOVEIS_TOWER = [
   {
     codigo: "Loja-18",
     finalidade: "Locação",
-    titulo: "Módulos compactos com vitrine",
-    area: "Metragem a confirmar",
-    andar: "Open mall",
+    titulo: "Loja pronta compacta com 2 pavimentos",
+    area: "2 pavimentos - metragem a confirmar",
+    andar: "2 pavimentos - open mall",
     status: "Referência visual",
     valor: "Consulte",
-    descricao: "Perfil para unidades com porta e vitrine frontal em sequência de mall. Fotos da Loja-18 e Loja-20 como referência complementar.",
-    codigos: ["Loja-18", "Loja-20"],
+    descricao: "Perfil de loja pronta com 2 pavimentos, porta e vitrine frontal em sequência de mall. Fotos da Loja-18 como referência principal; Loja-20 aparece como apoio visual.",
+    codigos: ["Loja-18"],
     fotos: [
       "assets/img/referencias/loja-18-01.jpg",
       "assets/img/referencias/loja-20-01.jpg"
