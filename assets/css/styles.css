@@ -347,6 +347,17 @@ h3 {
   letter-spacing: 0;
 }
 
+.reference-panel .panel-address {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  line-height: 1.24;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .quick-search label,
 .search-field span {
   display: block;
@@ -961,6 +972,12 @@ input:focus-visible {
     max-width: 18ch;
     font-size: 1.55rem;
     line-height: 1.06;
+  }
+
+  .reference-panel .panel-address {
+    max-width: 100%;
+    font-size: 0.84rem;
+    line-height: 1.32;
   }
 
   .panel-topics {
