@@ -88,14 +88,14 @@ window.IMOVEIS_TOWER = [
     ]
   },
   {
-    codigo: "Sala 40 m²",
+    codigo: "Sala com vista ampla",
     finalidade: "Locação",
-    titulo: "Sala 40 m² com vista ampla",
+    titulo: "Vista para mata e Shopping Vale do Aço",
     area: "40 m²",
     localizacao: "5º andar da torre",
     status: "Disponível",
     valor: "R$ 2.600/mês",
-    descricao: "Sala de 40 m² no 5º andar da torre, com vista ampla para a mata e o Shopping Vale do Aço. Possui 1 banheiro, acabamento padrão, piso elevado em granito e 2 estruturas para ar-condicionado.",
+    descricao: "Ambiente com 1 banheiro, acabamento padrão, piso elevado em granito e 2 estruturas para ar-condicionado.",
     fotos: [
       "assets/img/referencias/sala-40-padrao-03.jpg",
       "assets/img/referencias/sala-40-padrao-02.jpg",
