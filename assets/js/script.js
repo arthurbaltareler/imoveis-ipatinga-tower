@@ -41,6 +41,17 @@
     )).join("");
     const label = property.codigo || property.titulo || "Imóvel";
     const message = `Olá, Lívia. Tenho interesse em ${label} no Ipatinga Tower.`;
+    const details = [
+      property.area ? ["Área", property.area] : null,
+      ["Localização", property.localizacao || "Ipatinga Tower"],
+      ["Status", property.status || "A confirmar"],
+      ["Aluguel", property.valor || "Consulte"]
+    ].filter(Boolean).map(([term, value]) => (
+      `<div>
+        <dt>${term}</dt>
+        <dd>${value}</dd>
+      </div>`
+    )).join("");
 
     return `
       <article class="property-card">
@@ -56,22 +67,7 @@
           <p>${property.descricao || "Informações em atualização."}</p>
           ${photoStrip ? `<div class="photo-strip">${photoStrip}</div>` : ""}
           <dl class="property-details">
-            <div>
-              <dt>Área</dt>
-              <dd>${property.area || "Consulte"}</dd>
-            </div>
-            <div>
-              <dt>Localização</dt>
-              <dd>${property.localizacao || "Ipatinga Tower"}</dd>
-            </div>
-            <div>
-              <dt>Status</dt>
-              <dd>${property.status || "A confirmar"}</dd>
-            </div>
-            <div>
-              <dt>Aluguel</dt>
-              <dd>${property.valor || "Consulte"}</dd>
-            </div>
+            ${details}
           </dl>
           <a class="button button-secondary" href="${whatsappHref(message)}">Falar sobre este imóvel</a>
         </div>

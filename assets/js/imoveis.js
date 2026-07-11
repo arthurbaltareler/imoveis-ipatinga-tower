@@ -78,7 +78,6 @@ window.IMOVEIS_TOWER = [
     codigo: "Lojas sem acabamento",
     finalidade: "Locação",
     titulo: "Opções para personalizar o projeto",
-    area: "25 m² a 40 m²",
     localizacao: "Primeiro e segundo piso",
     status: "Disponível",
     valor: "Condição especial",
